@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chida09/github-packages-test/issues"
   },
-  "homepage": "https://github.com/chida09/github-packages-test#readme"
+  "homepage": "https://github.com/chida09/github-packages-test#readme",
+  "publishConfig": {
+    "chida09:registry": "https://npm.pkg.github.com"
+  }
 }
