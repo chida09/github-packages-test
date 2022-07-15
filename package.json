@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/chida09/github-packages-test#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@chida09:registry": "https://npm.pkg.github.com"
   }
 }
