@@ -29,8 +29,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: "@chida09"
       - run: npm ci
-      - run: echo ${{secrets.GITHUB_TOKEN}}
-      - run: echo ${{secrets.NPM}}
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM}}
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
