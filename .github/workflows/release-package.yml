@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-          registry-url: https://github.com/chida09/github-packages-test
+          registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN  }}' > ${{ github.workspace }}/.npmrc
       - run: npm publish
